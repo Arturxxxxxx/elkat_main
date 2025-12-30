@@ -13,7 +13,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['176.126.166.235', 'expertkresel.kg']
+ALLOWED_HOSTS = ['expertkresel.kg', 'www.expertkresel.kg']
 
 # Application definition
 
@@ -124,8 +124,9 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 15
 }
 CSRF_TRUSTED_ORIGINS = [
-    "http://176.126.166.235:1337",
-    "http://expertkresel.kg", 
+    "https://expertkresel.kg",
+    "https://www.expertkresel.kg", 
+ 
 ]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
